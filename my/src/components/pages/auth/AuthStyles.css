@@ -1,0 +1,97 @@
+.auth-container {
+    background-image: url("..\\img\\Gradient.png");
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.auth-form {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    width: 320px;
+}
+
+.auth-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.auth-form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.auth-label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: white;
+}
+
+.auth-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+}
+
+.auth-input:focus {
+    outline: none;
+    border-color: #00f0ff;
+}
+
+.auth-submit-btn {
+    background: transparent;
+    color: white;
+    border-radius: 15px;
+    height: 45px;
+    width: 180px;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.auth-submit-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.auth-back-btn {
+    background: transparent;
+    color: white;
+    border-radius: 15px;
+    height: 40px;
+    width: 120px;
+    border: 2px solid white;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.auth-back-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.auth-error {
+    color: #ff4d4d;
+    margin-bottom: 10px;
+}
+
+.auth-success {
+    color: #4dff4d;
+    margin-bottom: 10px;
+}

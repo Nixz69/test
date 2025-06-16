@@ -1,0 +1,35 @@
+.basket {
+    width: 98vw;
+    position: relative;
+}
+
+.basket button {
+    width: 4vw;
+    height: 8vh;
+    background-image: url("http://localhost:9001/api/v1/buckets/web/objects/download?preview=true&prefix=img%2Fbasket.png&version_id=null");
+    background-size: contain;
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    position: relative;
+}
+
+.basket button:hover {
+    transform: scale(1.1);
+}
+
+.basket-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: red;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 2px 6px;
+    min-width: 18px;
+    text-align: center;
+}

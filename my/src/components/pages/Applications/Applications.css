@@ -1,0 +1,144 @@
+/* Основной контейнер */
+.applications-container {
+  padding: 90px 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 24px;
+  color: black;
+}
+
+/* Карточка заявки */
+.app-card {
+  background-color: #fefefe;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  padding: 24px;
+  margin-bottom: 20px;
+  transition: all 0.2s ease;
+  border-left: 5px solid rgb(134, 134, 255);
+}
+
+.app-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Заголовок */
+.app-card h3 {
+  margin: 0 0 8px;
+  font-size: 1.4rem;
+  color: #111;
+}
+
+/* Параграфы */
+.app-card p {
+  margin: 6px 0;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+/* Метки статуса */
+.status-tag {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 16px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: white;
+}
+
+/* Цвета статусов */
+.status-draft {
+  background-color: #6c757d;
+}
+
+.status-formatted {
+  background-color: #007bff;
+}
+
+.status-completed {
+  background-color: #28a745;
+}
+
+.status-rejected {
+  background-color: #dc3545;
+}
+
+/* Модальное окно деталей */
+.app-details {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 90%;
+  color: black;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Кнопки */
+.app-details button,
+.status-update-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 16px;
+}
+
+.app-details button:hover,
+.status-update-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Кнопка удаления */
+.delete-button {
+  background-color: #dc3545 !important;
+}
+
+.delete-button:hover {
+  background-color: #b52a36 !important;
+}
+
+/* Обновление статуса */
+.status-update-form {
+  margin-top: 24px;
+  background-color: #f9f9f9;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.status-update-form h3 {
+  margin: 0 0 12px;
+}
+
+.status-update-form select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-right: 12px;
+}
+
+.completed-date {
+  font-size: 0.8em;
+  opacity: 0.8;
+  margin-left: 5px;
+}
+
+.detail-row {
+  margin-bottom: 10px;
+}
